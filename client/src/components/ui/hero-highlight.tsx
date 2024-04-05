@@ -59,7 +59,7 @@ export const HeroHighlight = ({
       {showGradient && (
         <div className="absolute inset-0 h-full w-full  pointer-events-none bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
       )}
-      <div className={cn("relative z-20", className)}>{children}</div>
+      <div className={cn("relative", className)}>{children}</div>
     </div>
   );
 };
@@ -90,7 +90,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-blue-300 to-blue-500 dark:from-indigo-500 dark:to-purple-500`,
         className
       )}
     >
