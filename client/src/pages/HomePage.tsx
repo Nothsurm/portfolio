@@ -36,7 +36,7 @@ export default function HomePage() {
       <main>
 
         {/* NAVBAR */}
-        <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-28 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-40 transition-all duration-200 w-full"}>
+        <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-28 transition-all duration-200 w-full opacity-85" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-40 transition-all duration-200 w-full"}>
           <div className="flex gap-20 sm:gap-44 md:gap-96 mr-2 ml-2">
               <Link to='/' className="flex text-4xl font-bold">
                   <span className="text-blue-500">M</span><p>R.DEV</p>

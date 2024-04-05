@@ -36,9 +36,9 @@ export const HeroHighlight = ({
       )}
       onMouseMove={handleMouseMove}
     >
-      <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -57,7 +57,7 @@ export const HeroHighlight = ({
         }}
       />
       {showGradient && (
-        <div className="absolute inset-0 h-full w-full  pointer-events-none bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
+        <div className="absolute inset-0 h-full w-full  pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
       )}
       <div className={cn("relative", className)}>{children}</div>
     </div>
