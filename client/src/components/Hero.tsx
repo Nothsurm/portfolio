@@ -9,6 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import { Button } from "./ui/button";
 
+
 export default function Hero() {
   return (
     <div className="min-h-screen flex items-center">
@@ -62,10 +63,10 @@ export default function Hero() {
                   Download CV
                 </Button>
               </HeroHighlight>
-            </div>
-            <div className="title-1 mx-auto self-center order-first md:order-last mt-56 md:mt-0">
-              <img src={ImageOfMyself} className="rounded-full shadow-sm"/>
-            </div>
+          </div>
+          <div className="title-1 mx-auto self-center order-first md:order-last mt-56 md:mt-0">
+            <img src={ImageOfMyself} alt="" className="rounded-full shadow-sm"/>
+          </div>
         </div>
     </div>
   )

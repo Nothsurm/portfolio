@@ -31,6 +31,20 @@ export default function HomePage() {
     const myProjects = useRef<null | HTMLDivElement>(null)
     const contactMe = useRef<null | HTMLDivElement>(null)
 
+    const animateSections = document.querySelectorAll('.animate')
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          entry.target.classList.toggle('show', entry.isIntersecting)
+      })
+    }, {
+        rootMargin: '-100px',
+    })
+  
+    animateSections.forEach(section => {
+        observer.observe(section)
+    })
+
   return (
     <>
       <main>

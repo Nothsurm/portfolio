@@ -9,11 +9,11 @@ import { MovingCards } from './sections/MovingCards'
 export default function AboutMe() {
   return (
     <div className="min-h-screen bg-zinc-800 text-neutral-200">
-      <div className="flex flex-col">
+      <div className="flex flex-col animate">
         <h1 className="self-center text-4xl mt-20 font-bold uppercase">About Me</h1>
-        <Separator className="w-[200px] mx-auto mt-2 bg-blue-500"/>
+        <Separator className="w-[110px] mx-auto mt-4 bg-blue-500"/>
       </div>
-      <div className="grid md:grid-cols-2 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 max-w-6xl mx-auto animate">
         <div className="mt-32 mx-auto">
           <img src={ImageOfComputer} className="rounded-full shadow-sm"/>
         </div>

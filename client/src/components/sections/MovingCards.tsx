@@ -30,7 +30,7 @@ const testimonials = [
     img: <img src={CSS} alt="" className="w-[50px] mt-2"/>,
   },
   {
-    img: <img src={JavaScript} alt="" className="w-[50px] mt-4"/>,
+    img: <img src={JavaScript} alt="" className="w-[50px] mt-6"/>,
   },
   {
     img: <img src={React} alt="" className="mt-2"/>,
