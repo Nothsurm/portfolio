@@ -1,6 +1,14 @@
-"use client";
- 
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+
+import HTML from '../../assets/HTML5.png'
+import CSS from '../../assets/CSS3.png'
+import JavaScript from '../../assets/Javascript.png'
+import React from '../../assets/React.png'
+import Nodejs from '../../assets/Node.js.png'
+import Expressjs from '../../assets/Express.png'
+import MongoDB from '../../assets/MongoDB.png'
+import MySQL from '../../assets/MySQL.png'
+import Git from '../../assets/Git.png'
  
 export function MovingCards() {
   return (
@@ -16,32 +24,30 @@ export function MovingCards() {
  
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    img: <img src={HTML} alt="" className="w-[100px]"/>,
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    img: <img src={CSS} alt="" className="w-[50px] mt-2"/>,
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    img: <img src={JavaScript} alt="" className="w-[50px] mt-4"/>,
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    img: <img src={React} alt="" className="mt-2"/>,
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    img: <img src={Nodejs} alt="" className=" mt-8"/>,
+  },
+  {
+    img: <img src={Expressjs} alt="" className="mt-8"/>,
+  },
+  {
+    img: <img src={MongoDB} alt="" className="mt-2"/>,
+  },
+  {
+    img: <img src={Git} alt="" className="mt-2"/>,
+  },
+  {
+    img: <img src={MySQL} alt="" className="mt-2"/>,
   },
 ];
