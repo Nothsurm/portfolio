@@ -47,11 +47,17 @@ export default function RushEats({ RushEatsImage }: Props) {
                   <Badge>TanStack</Badge>
                 </CardItem>
               </div>
+              <CardItem
+                  translateZ={20}
+                  className="mt-4 text-center text-sm text-neutral-500"
+                >
+                  * This website uses a free domain, therefore initial load time may take 30-60 seconds
+              </CardItem>
             </CardBody>
           </CardContainer>
           <div className="flex flex-col mt-32 text-center">
             <h1 className="text-xl font-semibold">A MERN full-stack Take-away website built with <span className="underline">Typescript</span> in the front-end, and <span className="underline">Node.js</span> and <span className="underline">Express.js</span> in the back-end.</h1>
-            <p className="text-zinc-600 leading-relaxed mt-8">Uses Auth0 for authentication. Utilises TanStack Query for handling api requests and Zod for form handling. Data is stored in MongoDB, and Shadcn/ui is used for UI components in the frontend.</p>
+            <p className="text-zinc-600 leading-relaxed mt-8">Uses Auth0 for authentication. Utilises TanStack Query for handling api requests and Zod for form handling. Data is stored in MongoDB, and Shadcn/ui is used for UI components in the frontend. Payment is done using Stripe.</p>
             <Separator className="w-[100px] mx-auto mt-6 bg-blue-500"/>
             <div className="mt-10 flex justify-center gap-2">
               <a href="https://rush-eats-frontend.onrender.com/" target="_blank" className="flex items-center">
