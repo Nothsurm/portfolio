@@ -1,10 +1,17 @@
 import { Separator } from "./ui/separator"
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { motion } from "framer-motion";
 
 import ImageOfComputer from '../assets/image-of-computer.png';
 
 import { MovingCards } from './sections/MovingCards'
+
+const words = `As a passionate software engineer, I thrive on solving complex problems and creating elegant solutions. My journey in the tech world began when I underwent a full-stack engineering course at IT Career Switch. Upon completion, I created multiple real-world full-stack applications as highlighted in my Projects. To gain more experience, I have worked with clients on Upwork fixing their software related problems. 
+
+I believe that software engineering is not just about writing code; it's about creating solutions that impact people's lives. Whether it's optimizing an algorithm or designing an intuitive user interface, I'm committed to making a positive difference.
+
+Prior to entering the tech world, I worked 5 years in hospitality and 2 years in construction, both jobs require good communication skills and being a team player, these are traits I can bring to the work place.`;
 
 export default function AboutMe() {
   return (
@@ -37,9 +44,7 @@ export default function AboutMe() {
                 <Highlight className="text-black text-2xl lg:text-3xl">
                   "A passionate and enthusiastic developer"
                 </Highlight>
-                <p className="mt-8 leading-relaxed">As a passionate software engineer, I thrive on solving complex problems and creating elegant solutions. My journey in the tech world began when I underwent a full-stack engineering course at IT Career Switch. Upon completion, I created multiple real-world full-stack applications as highlighted in my Projects. To gain more experience, I have worked with clients on <a href="https://www.upwork.com/freelancers/~0187be7100cd5c9eef" target="_blank" className="text-blue-300 hover:underline">Upwork</a> fixing their software related problems.</p>
-                <p className="mt-8 leading-relaxed">I believe that software engineering is not just about writing code; it's about creating solutions that impact people's lives. Whether it's optimizing an algorithm or designing an intuitive user interface, I'm committed to making a positive difference.</p>
-                <p className="mt-8 leading-relaxed">Prior to entering the tech world, I worked 5 years in hospitality and 2 years in construction, both jobs require good communication skills and being a team player, these are traits I can bring to the work place.</p>
+                <TextGenerateEffect words={words} className="mt-10"/>
               </div>
               <Separator className="w-[100px] mx-auto mt-10 bg-blue-500"/>
             </motion.h1>

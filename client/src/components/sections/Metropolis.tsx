@@ -14,12 +14,12 @@ type Props = {
 export default function Metropolis({ MetropolisImage }: Props) {
   return (
     <div className="flex flex-col bg-zinc-800 text-neutral-200">
-        <div className="flex flex-row gap-10 max-w-5xl mx-auto animate">
-          <div className="flex flex-col mt-32 text-center">
+        <div className="flex flex-row flex-wrap justify-center md:flex-nowrap gap-10 max-w-5xl mx-auto animate">
+          <div className="flex flex-col mt-0 md:mt-32 text-center order-last md:order-first">
             <h1 className="text-xl font-semibold">A full-stack E-commerce application built with <span className="underline">React</span> in the front-end, and <span className="underline">Node.js</span> and <span className="underline">Express.js</span> in the back-end.</h1>
-            <p className="text-neutral-300 leading-relaxed mt-8">User authentication is secure and includes Admin routes and priveleges. Utilises Redux to manage application state. Data is stored in MongoDB, and frontend UI is supported using react depedencies such as react-slick. Payment is achieved through PayPal Developer. CRUD operations are available to the user.</p>
+            <p className="text-neutral-300 leading-relaxed mt-8">User authentication is secure and includes Admin routes and priveleges. Utilises Redux to manage application state. Data is stored in MongoDB, and frontend UI is supported using node depedencies such as react-slick. Payment is achieved through PayPal Developer. CRUD operations are available to the user.</p>
             <Separator className="w-[100px] mx-auto mt-6 bg-blue-500"/>
-            <div className="mt-10 flex justify-center gap-2">
+            <div className="mt-10 flex justify-center gap-2 mb-10 md:mb-0">
               <a href="https://metropolis-k549.onrender.com/" target="_blank" className="flex items-center">
                 <Button>
                 <Search size={16} className="mr-2"/>
@@ -34,7 +34,7 @@ export default function Metropolis({ MetropolisImage }: Props) {
               </a>
             </div>
           </div>
-          <CardContainer className="inter-var">
+          <CardContainer className="inter-var order-first md:order-last">
             <CardBody className="bg-zinc-500 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
@@ -44,13 +44,13 @@ export default function Metropolis({ MetropolisImage }: Props) {
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-2">
                 <AspectRatio ratio={16 / 9}>
-                  <img src={MetropolisImage} alt="" className="h-[250px] rounded-lg"/>
+                  <img src={MetropolisImage} alt="" className="h-[250px] rounded-lg object-contain"/>
                 </AspectRatio>
               </CardItem>
               <div className="flex justify-between items-center mt-4">
                 <CardItem
                   translateZ={20}
-                  className="flex justify-center gap-2 flex-wrap"
+                  className="flex justify-center gap-2 mt-10 sm:mt-0 flex-wrap"
                 >
                   <Badge>HTML</Badge>
                   <Badge>Tailwind CSS</Badge>
