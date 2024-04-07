@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import CV from '../assets/files/CV.pdf'
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
@@ -28,9 +30,9 @@ export default function Footer() {
             </a>
           </button>
           <button>
-          <a href="https://www.upwork.com/freelancers/~0187be7100cd5c9eef" target="_blank">
-              <PiReadCvLogo className="hover:scale-110" size={40}/>
-            </a>
+          <a href={CV} download>
+            <PiReadCvLogo className="hover:scale-110" size={40}/>
+          </a>
           </button>
         </div>
         <Link to='/' className="flex text-4xl items-center font-bold">

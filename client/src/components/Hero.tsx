@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import ImageOfMyself from '../assets/image-of-myself.png';
 
+import CV from '../assets/files/CV.pdf'
+
 // Icons
 import { Download } from 'lucide-react';
 import { FaGithub } from "react-icons/fa";
@@ -60,7 +62,7 @@ export default function Hero() {
                 </div>
                 <Button className="title-3 bg-blue-500 hover:bg-blue-600 mt-8 flex mx-auto md:ml-0 md:mr-0 gap-2">
                   <Download size={16} />
-                  Download CV
+                    <a href={CV} download>Download CV</a>
                 </Button>
               </HeroHighlight>
           </div>
