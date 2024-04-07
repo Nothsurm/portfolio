@@ -32,7 +32,7 @@ export default function Hero() {
                 >
                   <div className="title-1 -mt-32 md:-mt-0">
                     <p className="text-xl lg:text-2xl">Hi there, I'm</p>
-                    <p className="text-2xl lg:text-4xl uppercase font-semibold mt-2">Michael Rushton</p>
+                    <p className="text-2xl lg:text-4xl uppercase font-semibold mt-2">Michael Pontes Rushton</p>
                     <div className="mt-4">
                     <Highlight className="text-black text-2xl lg:text-3xl">
                     a FULL-STACK SOFTWARE ENGINEER
