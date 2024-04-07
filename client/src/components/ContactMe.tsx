@@ -28,7 +28,7 @@ export default function ContactMe() {
           form.current.reset()
         },
         (error: any) => {
-          toast.error('Something went wrong, please try again')
+          toast.error(error.text)
           setLoading(false)
         }
       )
