@@ -12,8 +12,8 @@ import { Copyright } from "lucide-react";
 export default function Footer() {
   return (
     <div className="bg-zinc-700 text-stone-300 h-fit">
-      <div className="flex flex-row justify-between max-w-5xl mx-auto">
-        <div className="flex flex-row items-center gap-10 mt-6 mb-6">
+      <div className="flex flex-row flex-wrap justify-between max-w-5xl mx-auto">
+        <div className="flex flex-row flex-wrap items-center gap-10 mt-6 mb-6 mx-auto sm:mx-0">
           <button>
             <a href="https://github.com/Nothsurm" target="_blank">
               <FaGithub className="hover:scale-110" size={40}/>
@@ -35,7 +35,7 @@ export default function Footer() {
           </a>
           </button>
         </div>
-        <Link to='/' className="flex text-4xl items-center font-bold">
+        <Link to='/' className="flex text-4xl mx-auto sm:mx-0 items-center font-bold">
           <span className="text-blue-500">M</span><p>R.DEV</p>
         </Link>
       </div>
